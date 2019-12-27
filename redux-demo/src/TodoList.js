@@ -39,7 +39,7 @@ class TodoList extends Component {
   storeChange() {
     this.setState(store.getState())
   }
-  componentDidMount () {
+  componentDidMount() {
     const action = getTodoList()
     store.dispatch(action)
   }
